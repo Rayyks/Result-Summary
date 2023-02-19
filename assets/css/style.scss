@@ -1,0 +1,220 @@
+html,
+body {
+  overflow: hidden;
+  background-image: url(../images/anjay.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+$green: #1ecd97;
+$gray: #bbbbbb;
+
+@font-face {
+  font-family: Hank;
+  src: url(../fonts/HankenGrotesk-VariableFont_wght.ttf);
+}
+
+.container {
+  margin: auto;
+  margin-top: 1cm;
+  background-color: white;
+  width: 50%;
+  height: 80vh;
+  border-radius: 30px;
+  box-shadow: 24px 25px 50px -5px #00000021;
+}
+
+.container2 {
+  width: 50%;
+  height: 80vh;
+  background: hsl(252, 100%, 67%);
+  background: hsl(241, 81%, 54%);
+  border-radius: 30px;
+}
+
+.summary {
+  position: relative;
+  top: -5.5cm;
+  left: 9.5cm;
+  color: black;
+  font-family: Hank;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.your-result {
+  position: relative;
+  top: 0.8cm;
+  font-family: Hank;
+  font-weight: 700;
+  font-size: 1.3rem;
+  text-align: center;
+  margin: auto;
+  color: white;
+}
+
+.result-circle {
+  color: white;
+  font-family: Hank;
+  font-size: 3rem;
+  display: flex;
+  font-weight: bold;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 204px;
+  height: 204px;
+  left: 10.9cm;
+  top: 3.3cm;
+  border-radius: 100%;
+  background: hsla(256, 72%, 46%, 1);
+  background: linear-gradient(
+    0deg,
+    hsla(241, 72%, 46%, 0) 0%,
+    hsla(256, 72%, 46%, 1) 100%
+  );
+}
+
+.of {
+  position: relative;
+  text-align: center;
+  top: 5cm;
+  color: white;
+  font-size: 1rem;
+  font-family: Hank;
+  font-weight: bold;
+}
+
+.body-card {
+  color: white;
+  font-family: Hank;
+}
+
+.caption {
+  position: relative;
+  top: 6cm;
+  margin: auto;
+  width: 65%;
+  text-align: center;
+  font-family: Hank;
+  font-size: 500;
+  font-size: 1rem;
+}
+
+.caption-title {
+  margin: auto;
+  position: relative;
+  top: 5.5cm;
+  left: 3cm;
+  font-size: 48px;
+  align-items: center;
+}
+
+.detail-scor {
+  padding-left: 2vh;
+  margin-bottom: 2vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.reaction {
+  width: 85%;
+  height: 60px;
+  background: #fde9e9;
+  border-radius: 10px;
+}
+.memory {
+  width: 85%;
+  height: 60px;
+  border-radius: 10px;
+  background: rgba(237, 185, 67, 0.21);
+}
+.verbal {
+  width: 85%;
+  height: 60px;
+  background: #f3fbfa;
+  border-radius: 10px;
+}
+.visual {
+  width: 85%;
+  height: 60px;
+  background: rgba(191, 196, 253, 0.59);
+  border-radius: 10px;
+}
+
+h4 {
+  color: black;
+  font-family: Hank;
+  font-weight: bold;
+  padding-left: 1vh;
+}
+
+.scor {
+  padding-left: 15vh;
+}
+
+// Button Continue
+button {
+  margin-top: 3vh;
+  outline: none;
+  height: 40px;
+  text-align: center;
+  width: 90%;
+  border-radius: 40px;
+  background: #fff;
+  border: 2px solid #1ecd97;
+  color: #1ecd97;
+  letter-spacing: 1px;
+  text-shadow: 0;
+  font: {
+    size: 12px;
+    weight: bold;
+  }
+  cursor: pointer;
+  transition: all 0.25s ease;
+  &:hover {
+    color: white;
+    background: #1ecd97;
+  }
+  &:active {
+    //letter-spacing: 2px;
+    letter-spacing: 2px;
+  }
+  &:after {
+    content: "SUBMIT";
+  }
+}
+.onclic {
+  width: 40px;
+  border-color: #bbbbbb;
+  border-width: 3px;
+  font-size: 0;
+  border-left-color: #1ecd97;
+  animation: rotating 2s 0.25s linear infinite;
+
+  &:after {
+    content: "";
+  }
+  &:hover {
+    color: #1ecd97;
+    background: white;
+  }
+}
+.validate {
+  font-size: 13px;
+  color: white;
+  background: #1ecd97;
+  &:after {
+    font-family: "FontAwesome";
+    content: "\f00c";
+  }
+}
+
+@keyframes rotating {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
